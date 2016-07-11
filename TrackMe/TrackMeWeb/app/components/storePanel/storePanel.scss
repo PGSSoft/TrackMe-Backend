@@ -1,0 +1,25 @@
+@import 'common';
+$store-panel-padding-hor: 10px;
+$store-panel-height: $tml-toolbar-height - 2*$store-panel-padding-hor;
+$store-panel-height-small: $tml-toolbar-height-small - 2*$store-panel-padding-hor;
+.store-panel-container {
+  height: $store-panel-height;
+  @include apply-under($tml-main-breakpoint) {
+    height: $store-panel-height-small;
+  }
+  padding: $store-panel-padding-hor 0;
+  .store-panel-store-container {
+    padding-top: 20px;
+    padding-right: 20px;
+      float: right;
+  }
+  .store-panel-phone-container {
+      float: right;
+    .store-panel-phone {
+      height: $store-panel-height;
+      @include apply-under($tml-main-breakpoint) {
+        height: $store-panel-height-small;
+      }
+    }
+  }
+}

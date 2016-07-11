@@ -1,0 +1,6 @@
+{
+  "app": "app/",
+  "tmp": "tmp/",
+  "dist": "dist/",
+  "zip": "package.zip"
+}

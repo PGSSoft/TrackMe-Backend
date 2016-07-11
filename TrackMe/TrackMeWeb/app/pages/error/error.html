@@ -1,0 +1,22 @@
+<md-container class="tm-error-container" layout-align="center" layout="row">
+
+  <md-card class="md-whiteframe-10dp" flex="70" flex-xs="100" flex-sm="90" flex-md="80">
+    <md-container class="tm-error-icon-container" layout-align="center" layout="column">
+      <md-icon class="material-icons md-warn tm-error-icon " flex >
+        error
+      </md-icon>
+    </md-container>
+    <md-card-content>
+      <md-toolbar class="md-warn">
+        <div class="md-toolbar-tools">
+          <h2 class="md-flex">The application has encountered an error</h2>
+        </div>
+      </md-toolbar>
+      <md-container>
+        <p>
+          {{vm.errorMessage}}
+        </p>
+      </md-container>
+    </md-card-content>
+  </md-card>
+</md-container>

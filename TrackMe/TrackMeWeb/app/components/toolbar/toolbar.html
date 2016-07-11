@@ -1,0 +1,20 @@
+<div class='tml-toolbar'>
+  <div class='tml-toolbar-element tml-toolbar-logo-container'>
+    <img class='tml-toolbar-logo' ng-src="components/toolbar/trackMyLocation.jpg">
+  </div>
+  <div ng-class="{'tml-hide': isTimerHidden()}" class='tml-toolbar-element tml-toolbar-timer-container'>
+    <div class="tml-toolbar-timer-text" ng-show='sessionOkShown'>
+      <span>Link expires in</span><span class='tml-toolbar-timer-separator'> |</span><br class='tml-toolbar-timer-newline'/><span ng-transclude></span>
+    </div>
+    <div class="tml-toolbar-session-inactive" ng-show='sessionInvalidShown'>
+      Session number invalid
+    </div>
+    <div class="tml-toolbar-session-inactive" ng-show='sessionExpiredShown'>
+      Session expired
+    </div>
+  </div>
+  <div class="tml-toolbar-element tml-toolbar-store-container">
+    <store-panel></store-panel>
+  </div>
+</div>
+<div class="clearfix"></div>

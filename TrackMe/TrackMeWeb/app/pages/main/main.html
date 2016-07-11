@@ -1,0 +1,15 @@
+<md-container layout-align="center center" layout="row">
+  <md-container class="tm-token-container" flex="50" flex-lg="60" flex-md="85" flex-sm="100">
+    <form name="tokenForm">
+      <h1 id="tm-token-form-header">Enter your token to start tracking</h2>
+      <md-input-container >
+        <label>Token</label>
+        <input ng-model="vm.token" required type="text" name="tokenInput" role="alert">
+        <ng-messages for="tokenForm.tokenInput.$error" ng-show="tokenForm.clicked">
+          <ng-message when="required">Token is required</ng-message>
+        </ng-messages>
+      </md-input-container>
+      <md-button class="md-raised md-primary" ng-click="vm.submitToken()">Start tracking</md-button>
+    </form>
+  </md-container>
+</md-container>

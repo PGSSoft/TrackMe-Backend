@@ -1,0 +1,54 @@
+$main-color: rgb(255,87,34);
+$warning-color: rgb(244,67,54);
+
+$main-text-color: white;
+.clearfix {
+  clear:both;
+}
+$toolbar-height: 64px;
+
+@mixin responsive($xs, $sm, $md, $default) {
+  width:$default;
+  @media(max-width: 599px) {
+    width:$xs;
+  }
+  @media(min-width: 600px) and (max-width: 959px) {
+    width:$sm;
+  }
+  @media(min-width: 960px) and (max-width: 1279px) {
+    width:$md;
+  }
+};
+
+@mixin hide-under($width) {
+  @media(max-width: $width) {
+    display:none;
+  }
+}
+
+@mixin show-under($width) {
+  @media(max-width: $width) {
+    display:block;
+  }
+}
+
+@mixin apply-under($width) {
+  @media(max-width: $width) {
+    @content;
+  }
+}
+
+@mixin apply-above($width) {
+  @media(max-width: $width+1) {
+    @content;
+  }
+}
+
+$tml-main-breakpoint: 759px;
+$tml-toolbar-height: 130px;
+$tml-toolbar-height-small: 100px;
+
+.tml-active {
+  background-color: $main-color;
+  color: white;
+}

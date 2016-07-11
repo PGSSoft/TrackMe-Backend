@@ -1,0 +1,40 @@
+@import 'common';
+
+.tm-coordinates-panel-container {
+  padding: 15px;
+  margin-top: 50px;
+}
+.tm-invalid-token-panel {
+  .tm-notification-panel-container {
+    margin-top: 35px;
+  }
+}
+.tm-navigation-panel-header-session {
+  font-size: 16px;
+  @media(max-width: 599px) {
+    font-size: 12px;
+  }
+}
+
+.tml-coordinates-panel-container {
+  // border-top: solid $main-color;
+  height:100%;
+}
+
+.tml-footer {
+  display: none;
+  @include show-under($tml-main-breakpoint);
+  width:70%
+}
+
+.tml-navigation-button-container {
+  float: right;
+  position: relative;
+  top: -60px;
+  left: -30px;
+  .tml-navigation-button {
+    border-radius: 5px;
+    width:30px;
+    height: 30px;
+  }
+}

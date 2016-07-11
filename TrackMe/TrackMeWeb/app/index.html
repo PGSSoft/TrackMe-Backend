@@ -1,0 +1,74 @@
+<!doctype html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track My Location</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- @if target='dev' -->
+  <!-- build:css -->
+  <!-- @endif -->
+
+
+
+  <!-- @if target='dist' -->
+  <!-- build:css styles.css -->
+  <!-- @endif -->
+
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="{,/components/**}/*.css" />
+  <link rel="stylesheet" href="app.css" />
+  <!-- make page specific styles more important -->
+  <link rel="stylesheet" href="pages/**/*.css" />
+  <!-- endbuild -->
+
+</head>
+
+<body ng-app="app" ng-controller="AppCtrl as app">
+  <base href="/">
+  <div class='tml-app-container'>
+    <tm-toolbar>
+      <tm-timer></tm-timer>
+    </tm-toolbar>
+    <div class='tml-body-container'>
+      <div ui-view="root" class='tml-root-container'></div>
+    </div>
+  </div>
+
+  <!-- <div ui-view="main"></div> -->
+
+  <!-- @if target='dev' -->
+  <!-- build:js -->
+  <!-- @endif -->
+
+  <!-- @if target='dist' -->
+  <!-- build:js scripts.js -->
+  <!-- @endif -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/signalr/jquery.signalR.min.js"></script>
+
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+  <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+  <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="{,/pages/**}/*.js"></script>
+  <script src="{,/components/**}/*.js"></script>
+  <!-- endbuild -->
+
+  <script type="text/javascript">
+  if(app.baseUrl) {
+    document.write("<script src='"+app.baseUrl+"signalr/hubs'></scr"+"ipt>")
+  }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.tm-error-container {
+  margin-top: 100px;
+}
+
+$error-icon-size: 300px;
+$error-icon-size-small:200px;
+
+.tm-error-icon-container {
+  height:$error-icon-size;
+  .tm-error-icon {
+    font-size: $error-icon-size;
+    width: $error-icon-size;
+  }
+}
+
+@media (max-width: 600px) {
+  .tm-error-icon-container {
+    height:$error-icon-size-small;
+    .tm-error-icon {
+      font-size: $error-icon-size-small;
+      width: $error-icon-size-small;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMeApi", "TrackMeApi\TrackMeApi.csproj", "{2B98452D-62D4-466F-B68C-CC3D5039A61E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TrackMeWeb", "TrackMeWeb\", "{D081A8D8-F245-4EEA-8964-A853C6EF4A32}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_11465"
+		Debug.AspNetCompiler.PhysicalPath = "TrackMeWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11465\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_11465"
+		Release.AspNetCompiler.PhysicalPath = "TrackMeWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11465\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "11465"
+		SlnRelativePath = "TrackMeWeb\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMeBL", "TrackMeBL\TrackMeBL.csproj", "{F2A1653D-3267-49CF-BC73-DEAC859DF8CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B98452D-62D4-466F-B68C-CC3D5039A61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B98452D-62D4-466F-B68C-CC3D5039A61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B98452D-62D4-466F-B68C-CC3D5039A61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B98452D-62D4-466F-B68C-CC3D5039A61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D081A8D8-F245-4EEA-8964-A853C6EF4A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D081A8D8-F245-4EEA-8964-A853C6EF4A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D081A8D8-F245-4EEA-8964-A853C6EF4A32}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D081A8D8-F245-4EEA-8964-A853C6EF4A32}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F2A1653D-3267-49CF-BC73-DEAC859DF8CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A1653D-3267-49CF-BC73-DEAC859DF8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A1653D-3267-49CF-BC73-DEAC859DF8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A1653D-3267-49CF-BC73-DEAC859DF8CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

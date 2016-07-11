@@ -1,0 +1,39 @@
+{
+  "name": "gulp-angular-sample-project",
+  "version": "1.0.2",
+  "description": "A sample project with gulp-recipe-loader using angular framework.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PGSSoft/gulp-sample-project.git"
+  },
+  "keywords": [
+    "PGS",
+    "gulp",
+    "gulp-recipe",
+    "generator",
+    "angular"
+  ],
+  "author": "PGS Front",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-file": "^0.2.0",
+    "gulp-recipe-angular": "^0.1.2",
+    "gulp-recipe-autoprefixer": "^0.1.2",
+    "gulp-recipe-babel": "^0.1.1",
+    "gulp-recipe-browsersync-server": "^0.1.3",
+    "gulp-recipe-css": "^0.1.5",
+    "gulp-recipe-loader": "^0.1.5",
+    "gulp-recipe-pipemin-build": "^0.1.4",
+    "gulp-recipe-pipemin-index": "^0.1.4",
+    "gulp-recipe-preprocess": "^0.1.2",
+    "gulp-recipe-rev": "^0.1.2",
+    "gulp-recipe-sass": "^0.1.4",
+    "lodash": "^3.3.1",
+    "require-dir": "^0.1.0"
+  },
+  "devDependencies": {
+    "gulp-debug": "^2.0.1"
+  }
+}

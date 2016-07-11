@@ -1,0 +1,23 @@
+@import 'common';
+
+.tm-notification-panel-container {
+  padding: 0 15px;
+}
+
+.tm-notification-panel-container-raw {
+  height: $toolbar-height;
+  margin: auto;
+}
+
+.tm-notification-panel-raw {
+  background-color: $warning-color;
+  color: $main-text-color;
+  margin:auto;
+  @include responsive(100%,90%,80%,70%);
+}
+
+.tm-notification-panel-text-raw {
+  height: $toolbar-height - 40px;
+  font-size: 20px;
+  padding: 20px 16px;
+}
